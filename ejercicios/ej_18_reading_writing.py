@@ -2,52 +2,45 @@ import numpy as np
 from pandas import Series,DataFrame
 import pandas as pd
 
-# Can open csv files as a dataframe
-dframe = pd.read_csv('lec25.csv')
+# se pueden abrir archivos csv como dataframes
+dframe = pd.read_csv('data/ej_18_data.csv')
 
-#Show
+# desplegar
 dframe
 
-# Can also use read_table with ',' as a delimiter
-dframe = pd.read_table('lec25.csv',sep=',')
+# tambien se puede utilizr read_table para leer una tabla con una ',' como delimitante
+dframe = pd.read_table('data/ej_18_data.csv',sep=',')
 
-#Show
+# desplegar
 dframe
 
+# si no queremos que el titulo sea la primer fila
+dframe = pd.read_csv('data/ej_18_data.csv',header=None)
+
+# desplegar
 dframe
 
-#If we dont want the header to be the first row
-dframe = pd.read_csv('lec25.csv',header=None)
+# tambien podemos delimitar el numero de filas a leer
+pd.read_csv('data/ej_18_data.csv',header=None,nrows=2)
 
-#Show
+# desplegar
 dframe
 
-# We can also indicate a particular number of rows to be read
-pd.read_csv('lec25.csv',header=None,nrows=2)
+# escribimos el dataframe en un archivo de texto
+dframe.to_csv('data/mytextdata_out.csv')
 
-# Let's see dframe again
-dframe
+# veras el archivo en donde se ejecuto python
 
-# Now let's see how we can write DataFrames out to text files
-dframe.to_csv('mytextdata_out.csv')
+# tambien se pueden utilizar otros metodos
 
-#You'll see this file where you're ipython Notebooks are saved (Usually under my documents)
-
-#  We can also use other delimiters
-
-#we'll import sys to see the output
+# podemos importar el modulo sys
 import sys 
 
-#Use sys.stdout to see the output directly and not save it
+# usando sys.stdout se puede ver lo que se va a guardar sin necesidad de escribir el archivo
 dframe.to_csv(sys.stdout,sep='_')
 
-# Just to make sure we understand the delimiter
+# un ejemplo para entender el delimitante
 dframe.to_csv(sys.stdout,sep='?')
 
-#We can also choose to write only a specific subset of columns
+# podemos elegir solo las columnas que deseamos
 dframe.to_csv(sys.stdout,columns=[0,1,2])
-
-#You should also check out pythons built-in csv reader and writer for more info:
-# https://docs.python.org/2/library/csv.html
-
-#Next we'll learn about reading JSON data!
