@@ -29,7 +29,7 @@ dframe
 # escribimos el dataframe en un archivo de texto
 dframe.to_csv('data/mytextdata_out.csv')
 
-# veras el archivo en donde se ejecuto python
+# veras el archivo en donde se ejecuta python
 
 # tambien se pueden utilizar otros metodos
 
