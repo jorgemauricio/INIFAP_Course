@@ -44,7 +44,6 @@ arr
 
 # la informacion es copiada, se despliega el arreglo original para evitar problemas de memoria
 
-
 # To get a copy, need to be explicit
 arr_copy = arr.copy()
 

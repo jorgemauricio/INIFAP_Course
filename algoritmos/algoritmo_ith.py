@@ -43,7 +43,7 @@ def calcularITH(ta, hr):
 	return ith
 
 #%% crear columna tmed
-data['tmed'] = data['tmax'] + data['tmin'] / 2
+data['tmed'] = (data['tmax'] + data['tmin']) / 2
 
 #%% display head of file
 data.head()
