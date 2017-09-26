@@ -12,7 +12,7 @@ ser1
 ser1.sort_index()
 
 # ordenar por valores
-ser1.order()
+ser1.sort_values()
 
 # Rank
 
