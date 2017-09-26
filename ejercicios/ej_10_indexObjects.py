@@ -17,4 +17,4 @@ my_index[2:]
 # si tratamos de cambiar un index, que pasa?
 my_index[0] = 'Z'
 
-# Excelente los indices no son mutables
+# Marca Error. Los indices no son mutables

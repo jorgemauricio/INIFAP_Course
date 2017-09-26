@@ -27,6 +27,9 @@ plt.colorbar()
 # colocar un titulo a la grafica
 plt.title("GraficaP sin(x)+sin(y)")
 
+#%% desplegar gráfico
+plt.show()
+
 # numpy.where
 answer2 = np.where(condition,A,B)
 
@@ -61,7 +64,7 @@ arr.mean()
 # desviacion estandar
 arr.std()
 
-#Variance
+# Varianza
 arr.var()
 
 # arreglos con valores condicionales
