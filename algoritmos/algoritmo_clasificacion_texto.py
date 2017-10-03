@@ -1,4 +1,11 @@
-# librerias
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jul 17 16:17:25 2017
+
+@author: jorgemauricio
+"""
+#%% librerias
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -39,6 +46,9 @@ file = file.replace('¡',' ')
 #%% eliminar doble espacio
 file = file.replace('  ',' ')
 
+#%% eliminar doble espacio
+file = file.replace('   ',' ')
+
 #%% texto a array
 fileArray = file.split(' ')
 
@@ -56,7 +66,7 @@ for i in fileArray:
 		dictionaryOfWords[i] = 1
 
 #%% preposiciones
-preposiciones = ['A', 'ANTE', 'BAJO', 'CABE', 'CON', 'CONTRA', 'DE', 'DESDE', 'DURANTE', 'EN','ENTRE', 'HACIA','HASTA','MEDIANTE','PARA','POR','SEGUN','SIN','SON','SOBRE','TRAS','Y','A','O','YA','LA','LOS','EL','ELLOS', 'HE', 'UN', 'LAS', 'QUE', 'SE', 'UNA']
+preposiciones = ['','AL','A', 'ANTE', 'BAJO', 'CABE', 'CON', 'CONTRA', 'DE', 'DESDE', 'DURANTE', 'EN','ENTRE', 'HACIA','HASTA','MEDIANTE','PARA','POR','SEGUN','SIN','SON','SOBRE','TRAS','Y','A','O','YA','LA','LOS','EL','ELLOS', 'HE', 'UN', 'LAS','LO','NO','DEL','ESTE', 'ESTA', 'ESTÁN', 'PERO', 'HA', 'MÁS', 'QUE', 'SE', 'ES','UNA', 'COMO','SU']
 
 #%% borrar preposiciones
 for i in preposiciones:
@@ -71,12 +81,13 @@ data['Frecuencia'] = dictionaryOfWords.values()
 #%% sort data
 data = data.sort_values(by='Frecuencia')
 
-#%% clasificar Frcuencia > 20
-data = data.loc[data['Frecuencia'] > 20]
 #%% generate x , y 
-
 x = np.array(data['Palabra'])
 y = np.array(data['Frecuencia'])
+
+#%% 15 palabras mas mencionadas
+x = x[-15:]
+y = y[-15:]
 
 xi = np.arange(0,len(x),1)
 

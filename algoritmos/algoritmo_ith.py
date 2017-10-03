@@ -36,6 +36,14 @@ data['dateFormat'] = data.apply(lambda x: '%d-%d' % (x['year'], x['month']), axi
 
 #%% Funcion para calcular el ITH
 def calcularITH(ta, hr):
+	"""
+	Calculate ith from ta and hr
+	return ith
+	ith = 1.8 * ta + 32 - (0.55 - (0.55 * (hr/100.0))) * (1.8 * ta) - 26.0
+	param: ta: temperatura ambiente
+	param: hr: humedad relativa
+	param: ith: indice termohigrometrico
+	"""
 	cal1 = 1.8 * ta
 	cal2 = (0.55 - (0.55 * (hr/100.0)))
 	cal3 = (1.8 * ta) - 26.0
