@@ -64,7 +64,7 @@ data.head()
 
 #%% Aggregation
 aggregations = {
-        'ith' : ['sum', 'min', 'max', 'median', 'mean', 'std']
+        'ith' : ['min', 'max', 'median', 'mean', 'std']
         }
 
 #%% Apply aggregation
