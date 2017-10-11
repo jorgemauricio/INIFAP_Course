@@ -15,7 +15,7 @@ Esta base de datos se encuentra en la carpeta **data** con el nombre de **data_c
 
 **Tienes 10 minutos como maximo para contestar las siguientes preguntas:**
 
-* Numero total de estaciones en el dataframe?
+* Numero total de estaciones en la base de datos?
 * Cuales son los 5 anios con mas datos disponibles?
 * Precpitacion acumulada de toda la base de datos?
 * Precipitacion acumulada por anios

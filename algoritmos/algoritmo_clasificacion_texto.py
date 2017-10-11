@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #%% read .txt files
-f = open('../data/2.txt', 'r')
+f = open('../data/1.txt', 'r')
 
 #%% crear una variable
 file = f.read()
