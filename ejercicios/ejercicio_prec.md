@@ -1,6 +1,7 @@
 # Ejercicio Precipitacion
 
-Para el siguiente ejercicio vamos a ocupar la base de datos de precipitacion de la RNEAA la cual incluye los siguientes campos:
+Para el siguiente ejercicio vamos a ocupar la base de datos de precipitacion de la Red Nacional de Estacioes Agrometeorologias Automatizadas **RNEAA** la cual incluye los siguientes campos:
+
 * index : variable entera, indice del valor
 * name : variable texto, nombre de la estacion
 * number : variable entera: numero de la estacion
@@ -13,12 +14,12 @@ Para el siguiente ejercicio vamos a ocupar la base de datos de precipitacion de 
 
 Esta base de datos se encuentra en la carpeta **data** con el nombre de **data_course_prec.csv**
 
-**Tienes 10 minutos como maximo para contestar las siguientes preguntas:**
+**Tienes 15 minutos como maximo para contestar las siguientes preguntas:**
 
 * Numero total de estaciones en la base de datos?
 * Cuales son los 5 anios con mas datos disponibles?
 * Precpitacion acumulada de toda la base de datos?
-* Precipitacion acumulada por anios
-* Numero de dias con lluvia de toda la base de datos?
+* Precipitacion acumulada por anios?
+* Numero de dias con lluvia?
 * Numero de dias sin lluvia?
 * Numero de dias con datos nulos?
