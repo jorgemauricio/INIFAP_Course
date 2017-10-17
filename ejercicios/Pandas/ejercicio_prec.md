@@ -23,3 +23,6 @@ Esta base de datos se encuentra en la carpeta **data** con el nombre de **data_c
 * Numero de dias con lluvia?
 * Numero de dias sin lluvia?
 * Numero de dias con datos nulos?
+
+### Bonus
+* Los 5 registros con la acumulacion mas alta (anio-mes)
