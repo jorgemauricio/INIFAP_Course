@@ -20,7 +20,7 @@ Created on Mon Jul 17 16:17:25 2017
 
 """
 
-#librerias
+#%%librerias
 import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
@@ -46,7 +46,7 @@ data.info()
 data.dtypes
 
 #%% nombre de las columnas
-data.columns()
+data.columns
 
 #%% seleccionamos las columnas mas importantes
 dataP = data[['CICLO','MES','NOMBRE','TEMA','SECTOR','MONTO']]
