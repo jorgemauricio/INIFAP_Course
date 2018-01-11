@@ -26,7 +26,7 @@ estaciones = np.unique(estaciones)
 for i in estaciones:
 	dataTemp = data.loc[data['name'] == i]
 	print("***** Generando: {}".format(i))
-	tempTitle = "../resultados/{}.csv".format(i)
+	tempTitle = "../resultados/clasificacion/{}.csv".format(i)
 	dataTemp.to_csv(tempTitle)
 
 print("***** proceso terminado")

@@ -100,5 +100,8 @@ ENV/
 # data forlders
 /data
 
+# resultados - clasificacion
+/resultados/clasificacion
+
 # mypy
 .mypy_cache/
