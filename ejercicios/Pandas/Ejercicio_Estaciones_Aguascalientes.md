@@ -8,18 +8,12 @@ La base de datos contiene los siguientes campos:
     fecha: Fecha en que se tomo el registro
     prec: Precipitación
 
+Esta base se encuentra en la carpeta **data** con el nombre de **ags_ejercicio_curso.csv**
 
-Esta base de datos se encuentra localizada en la carpeta **data** con el nombre de **data_course_prec.csv**
+Tienes 15 minutos como máximo para resolver las siguientes preguntas:
 
-**Tienes 15 minutos como máximo para contestar las siguientes preguntas:**
-
-* Número total de estaciones en la base de datos?
-* Cuáles son los 5 años con mas datos disponibles?
-* Precipitación acumulada de toda la base de datos?
-* Precipitación acumulada por años?
-* Numero de días con lluvia?
-* Numero de días sin lluvia?
-* Numero de días con datos nulos?
-
-### Bonus
-* Los 5 registros con la acumulación más alta (año-mes)
+    Número de estaciones que se encuentran en la base de datos?
+    Precipitación acumulada de la base de datos?
+    Los 5 años con mayor precipitación de la base de datos?
+    La estación con la mayor acumulación de precipitación de la base de datos?
+    Año y mes en la que se presenta la mayor acumulación de precipitación en la base de datos?
