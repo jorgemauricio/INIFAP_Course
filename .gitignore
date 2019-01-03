@@ -97,7 +97,7 @@ ENV/
 # mkdocs documentation
 /site
 
-# data forlders
+# data folders
 /data
 
 # resultados - clasificacion
